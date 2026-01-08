@@ -14,7 +14,7 @@ export class MinotaurApi implements ICredentialType {
 	icon: Icon = { light: 'file:../icons/minotaur.svg', dark: 'file:../icons/minotaur.dark.svg' };
 
 	documentationUrl =
-		'https://github.com/MINOTAUR-LLC/n8n-nodes-fetch-contacts?tab=readme-ov-file#credentials';
+		'https://github.com/MINOTAUR-LLC/n8n-nodes-minotaur-sales?tab=readme-ov-file#credentials';
 
 	properties: INodeProperties[] = [
 		{
