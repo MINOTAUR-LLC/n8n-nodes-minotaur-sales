@@ -1,6 +1,9 @@
 {
   "name": "@minotaur_sales/n8n-nodes-minotaur-sales",
   "version": "0.2.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "n8n nodes for integration with Minotaur sales",
   "license": "MIT",
   "homepage": "",
