@@ -38,8 +38,7 @@ export class MinotaurApi implements ICredentialType {
 
 	test: ICredentialTestRequest = {
 		request: {
-			// baseURL: 'https://api.minotaursales.io',
-			baseURL: 'http://localhost:8005',
+			baseURL: 'https://api.minotaursales.io',
 			url: '/api/ext/ping',
 		},
 	};
