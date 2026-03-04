@@ -1,4 +1,4 @@
-import { IExecuteFunctions, INodeExecutionData } from 'n8n-workflow';
+import { IExecuteFunctions, INodeExecutionData, NodeApiError } from 'n8n-workflow';
 
 async function list(this: IExecuteFunctions, i: number): Promise<INodeExecutionData[][]> {
 	const returnData: INodeExecutionData[] = [];
@@ -74,8 +74,9 @@ async function list(this: IExecuteFunctions, i: number): Promise<INodeExecutionD
 				json: { error: error.message },
 				pairedItem: { item: i },
 			});
+			return [returnData];
 		}
-		throw error;
+		throw new NodeApiError(this.getNode(), error);
 	}
 
 	return [returnData];
