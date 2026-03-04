@@ -112,30 +112,4 @@ export const properties: INodeProperties[] = [
 			},
 		},
 	},
-	// {
-	// 	displayName: 'First Names',
-	// 	name: 'first_name',
-	// 	type: 'string',
-	// 	default: '',
-	// 	description: 'First names to filter contacts by',
-	// 	displayOptions: {
-	// 		show: {
-	// 			resource: ['contact'],
-	// 			operation: ['list'],
-	// 		},
-	// 	},
-	// },
-	// {
-	// 	displayName: 'Last Names',
-	// 	name: 'last_name',
-	// 	type: 'string',
-	// 	default: '',
-	// 	description: 'Last names to filter contacts by',
-	// 	displayOptions: {
-	// 		show: {
-	// 			resource: ['contact'],
-	// 			operation: ['list'],
-	// 		},
-	// 	},
-	// },
 ];

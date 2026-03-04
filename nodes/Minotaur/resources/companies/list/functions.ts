@@ -9,8 +9,6 @@ async function list(this: IExecuteFunctions, i: number): Promise<INodeExecutionD
 		const cities = (this.getNodeParameter('location_locality', i) as string[]) ?? [];
 		const regions = (this.getNodeParameter('location_region', i) as string[]) ?? [];
 		const countries = (this.getNodeParameter('location_country', i) as string[]) ?? [];
-		// const industries = (this.getNodeParameter('industry', i) as string[]) ?? [];
-		// const companyNames = (this.getNodeParameter('company_name', i) as string[]) ?? [];
 
 		const filters = Object.assign(
 			{},
@@ -23,17 +21,11 @@ async function list(this: IExecuteFunctions, i: number): Promise<INodeExecutionD
 			{
 				location_country: countries ? [countries] : [],
 			},
-			// {
-			// 	industry: industries ? [industries] : [],
-			// },
-			// {
-			// 	company: companyNames ? [companyNames] : [],
-			// },
 		);
 
 		const response = await this.helpers.httpRequestWithAuthentication.call(this, 'minotaurApi', {
 			method: 'POST',
-			url: 'https://api.minotaursales.io/api/ext/contacts/list',
+			url: 'https://api.minotaursales.io/api/ext/company/list',
 			body: {
 				filters,
 				paginate: {

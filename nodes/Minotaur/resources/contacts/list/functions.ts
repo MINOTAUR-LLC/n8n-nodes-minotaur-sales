@@ -13,8 +13,6 @@ async function list(this: IExecuteFunctions, i: number): Promise<INodeExecutionD
 		const industries = (this.getNodeParameter('industry', i) as string[]) ?? [];
 		const companyNames = (this.getNodeParameter('company', i) as string[]) ?? [];
 		const postalCodes = (this.getNodeParameter('location_postal_code', i) as string[]) ?? [];
-		// const firstNames = (this.getNodeParameter('first_name', i) as string[]) ?? [];
-		// const lastNames = (this.getNodeParameter('last_name', i) as string[]) ?? [];
 
 		const filters = Object.assign(
 			{},
@@ -39,12 +37,6 @@ async function list(this: IExecuteFunctions, i: number): Promise<INodeExecutionD
 			{
 				location_postal_code: postalCodes ? [postalCodes] : [],
 			},
-			// {
-			// 	first_name: firstNames ? [firstNames] : [],
-			// },
-			// {
-			// 	last_name: lastNames ? [lastNames] : [],
-			// },
 		);
 
 		const response = await this.helpers.httpRequestWithAuthentication.call(this, 'minotaurApi', {

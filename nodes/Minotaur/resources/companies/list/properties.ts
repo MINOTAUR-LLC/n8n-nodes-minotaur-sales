@@ -20,32 +20,6 @@ export const properties: INodeProperties[] = [
 			},
 		},
 	},
-	// {
-	// 	displayName: 'Company Name',
-	// 	name: 'company_name',
-	// 	type: 'string',
-	// 	default: '',
-	// 	description: 'Company names to filter companies by',
-	// 	displayOptions: {
-	// 		show: {
-	// 			resource: ['company'],
-	// 			operation: ['list'],
-	// 		},
-	// 	},
-	// },
-	// {
-	// 	displayName: 'Industry',
-	// 	name: 'industry',
-	// 	type: 'string',
-	// 	default: '',
-	// 	description: 'Industries to filter companies by',
-	// 	displayOptions: {
-	// 		show: {
-	// 			resource: ['company'],
-	// 			operation: ['list'],
-	// 		},
-	// 	},
-	// },
 	{
 		displayName: 'City',
 		name: 'location_locality',
