@@ -1,6 +1,6 @@
 {
   "name": "@minotaur_sales/n8n-nodes-minotaur-sales",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "publishConfig": {
     "access": "public"
   },
