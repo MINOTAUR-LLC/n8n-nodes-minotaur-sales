@@ -1,13 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="darkblue"
-    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-cpu">
-    <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
-    <rect x="9" y="9" width="6" height="6"></rect>
-    <line x1="9" y1="1" x2="9" y2="4"></line>
-    <line x1="15" y1="1" x2="15" y2="4"></line>
-    <line x1="9" y1="20" x2="9" y2="23"></line>
-    <line x1="15" y1="20" x2="15" y2="23"></line>
-    <line x1="20" y1="9" x2="23" y2="9"></line>
-    <line x1="20" y1="14" x2="23" y2="14"></line>
-    <line x1="1" y1="9" x2="4" y2="9"></line>
-    <line x1="1" y1="14" x2="4" y2="14"></line>
+<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6228_228491)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M75 69.0537L3.75 3.75024V27.4967L60.1563 128.437H89.8437L146.25 27.4967V3.75024L75 69.0537ZM146.25 146.25L107.606 107.606L139.191 61.5442L146.25 146.25ZM3.75 146.25L42.394 107.606L10.8087 61.5442L3.75 146.25Z" fill="#045DC3"/>
+</g>
+<defs>
+<clipPath id="clip0_6228_228491">
+<rect width="150" height="150" fill="white"/>
+</clipPath>
+</defs>
 </svg>
